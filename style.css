@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background:rgba(8, 8, 44, 0.959);
+}
+.container{
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.app{
+    width:600px;
+    height:60%;
+    margin:20px auto;
+    padding:20px;
+    color:white;
+    background-color: white;
+    border:2px;
+    border-radius:10px;
+}
+.app h1{
+    font-size: 24px;
+    font-weight: 800;
+    border-bottom:2px solid black;
+    padding-bottom:5px;
+    color:black
+}
+.quiz{
+    padding:20px 0;
+    /* display:flex; */
+}
+#question,#answerbutton{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quiz h2{
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+    padding:5px;
+    margin:10px;
+}
+.btn{
+    padding:10px 20px;
+    display:flex;
+    flex-direction: column;
+    margin:10px 5px;
+    width:100%;
+    border:3px solid rgb(11, 49, 54);
+    border-radius:5px;
+    cursor: pointer;
+    transition: all 0.3;
+}
+.btn:hover:not([disabled]){
+    background-color: black;
+    color:white;
+}
+.btn:disabled{
+    cursor:no-drop;
+}
+#next_btn{
+    padding:10px 5px;
+    margin:5px;
+    color:rgb(212, 212, 212);
+    background-color: rgb(42, 71, 165);
+    width:20%;
+    border:2px solid rgb(247, 243, 243);
+    border-radius: 25px;
+    font-size: 15px;
+    translate:380%;
+}
+.next_btn:hover{
+    background-color: rgb(15, 15, 112);
+    color:rgb(231, 229, 229)
+}
+.correct{
+    background-color: rgb(58, 179, 58);
+}
+.incorrect{
+    background-color: rgb(224, 77, 77);
+}
+@media only screen and (min-width:200px) and (max-width:319){
+    body{
+        background-color:aqua;
+    }
+    .app{
+        width:300px;
+        height:50%;
+        margin:7px;
+        padding:10px;
+        background-color: white;
+        border:2px;
+        border-radius:30px;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:480px) {
+    body{
+        background:red;
+    }
+    .app{
+    width:380px;
+    height:60%;
+    margin:10px;
+    padding:15px;
+    background-color: white;
+    border:2px;
+    border-radius:10px;
+}
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    body{
+        background:rgb(30, 117, 3);
+    }
+    .app{
+    width:450px;
+    height:70%;
+    margin:10px;
+    padding:25px;
+    background-color: white;
+    border:2px;
+    border-radius:30px;
+    }
+
+}
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    body{
+        background:rgb(141, 120, 3);
+    }
+}
+@media only screen and (min-width:1024px){
+    body{
+        background:rgb(19, 0, 128);
+    }
+}
